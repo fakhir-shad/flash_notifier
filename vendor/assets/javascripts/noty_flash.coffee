@@ -1,5 +1,4 @@
 buildNotyFlash = () ->
-  console.log('Noty Flash')
   Noty.overrideDefaults({
     layout: fetchFlashOption('placement','topRight')
     theme: fetchFlashOption('theme','mint')

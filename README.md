@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ### For Bootstrap Flash Messages
     
-Add this helper method in your layout and leave rest to the gem!
+Add this helper method in your layout and make sure you have bootstrap installed!
 
     <%= build_bootstrap_flash %>
     

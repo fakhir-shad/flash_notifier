@@ -1,5 +1,4 @@
 buildFlash = () ->
-  console.log('Inside Gem')
   toastr.options =
     positionClass: fetchFlashOption('placement', 'toast-bottom-right')
     timeOut: fetchFlashOption('timeout','3500')

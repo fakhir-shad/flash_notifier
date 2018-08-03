@@ -5,8 +5,5 @@ module FlashNotifier
     initializer 'build_flash.helper' do |app|
       ActionView::Base.send :include, FlashHelper
     end
-    initializer 'build_bootstrap_flash.helper' do |app|
-      ActionView::Base.send :include, FlashHelper
-    end
   end
 end

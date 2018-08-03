@@ -7,7 +7,8 @@ Gem::Specification.new do |spec|
   spec.name          = "flash_notifier"
   spec.version       = FlashNotifier::VERSION
   spec.authors       = ["fakhir-shad"]
-  spec.email         = ["fakhir.shad@virtual-force.com"]
+  spec.email         = ["fakhir.shad@virtual-force.com","muaazrafi@gmail.com"]
+  spec.platform      = Gem::Platform::RUBY
 
   spec.summary       = %q{Integrate Flash Messages with ease using Noty JS, Toastr JS or Bootstrap}
   spec.description   = %q{A simple Gem that allows you to integrate flash messages using Noty JS, Toastr JS or Bootstrap }
@@ -16,7 +17,7 @@ Gem::Specification.new do |spec|
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
-
+  spec.required_ruby_version = '>= 2.0.0'
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
