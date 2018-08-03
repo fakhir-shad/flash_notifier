@@ -1,5 +1,6 @@
 .idea/
 *.gem
+bin/
 /bin
 /.bundle/
 /.yardoc
