@@ -1,8 +1,6 @@
 # FlashNotifier
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/flash_notifier`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+If you are tired of integrating flash messages in your rails application over and over again then this gem is for you!
 
 ## Installation
 
@@ -22,7 +20,61 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### For Bootstrap Flash Messages
+    
+Add this helper method in your layout and leave rest to the gem!
+
+    <%= build_bootstrap_flash %>
+    
+### For other two libraries follow following steps            
+
+#### Step 1: Choose a Library Noty JS or Toastr JS
+
+#### For Noty JS 3.1.4 ([Official Website](https://ned.im/noty/#/))
+
+Import noty library in your application.js
+
+    //= require noty_lib
+    
+Add noty stylesheet in your application.scss
+
+    @import "noty";
+    
+#### For Toastr JS 2.1.4 ([Official Website](https://codeseven.github.io/toastr/))
+
+Import noty library in your application.js
+
+    //= require toastr_lib
+    
+Add noty stylesheet in your application.scss
+
+    @import "toastr.min";
+    
+### Step 2
+    
+In your layout add this helper method
+
+    <%= build_flash %>
+    
+### Optional Step 3: Pass options to helper method  
+
+For Onscreen positioning of flash message pass param
+
+    <%= build_flash placement: 'topRight' %>
+    
+To manage progress bar pass param
+
+    <%= build_flash progress_bar: true %>
+    
+To set auto hide timeout pass param
+
+     <%= build_flash timeout: 3500 %>
+     
+To set default theme pass param (Note this param works only for Noty JS)
+
+     <%= build_flash theme: 'mint' %>
+    
+##### Values for these params can be found here [Noty JS](https://ned.im/noty/#/options), [Toastr JS](https://codeseven.github.io/toastr/demo.html)
 
 ## Development
 
@@ -32,7 +84,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/flash_notifier. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/[fakhir-shad]/flash_notifier. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 

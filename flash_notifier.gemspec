@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["fakhir-shad"]
   spec.email         = ["fakhir.shad@virtual-force.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Integrate Flash Messages with ease using Noty JS, Toastr JS or Bootstrap}
+  spec.description   = %q{A simple Gem that allows you to integrate flash messages using Noty JS, Toastr JS or Bootstrap }
+  spec.homepage      = ""
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
