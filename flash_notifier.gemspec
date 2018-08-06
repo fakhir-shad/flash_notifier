@@ -6,7 +6,7 @@ require "flash_notifier/version"
 Gem::Specification.new do |spec|
   spec.name          = "flash_notifier"
   spec.version       = FlashNotifier::VERSION
-  spec.authors       = ["fakhir-shad"]
+  spec.authors       = ["Fakhir Shad", "Muaaz Rafi"]
   spec.email         = ["fakhir.shad@virtual-force.com","muaazrafi@gmail.com"]
   spec.platform      = Gem::Platform::RUBY
 
