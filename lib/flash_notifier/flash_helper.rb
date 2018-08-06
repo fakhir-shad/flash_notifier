@@ -18,7 +18,7 @@ module FlashHelper
     }
     html = ''
     flash.each do |type, message|
-      html += content_tag :div, class: "alert #{alert_klasses[type.to_sym] || type.to_s} alert-dismissible fade in", role: 'alert' do
+      html += content_tag :div, class: "alert #{alert_klasses[type.to_sym] || type.to_s} alert-dismissible fade show", role: 'alert' do
         inner_html = link_to 'x', '#', class: 'close', data: {dismiss: 'alert'}, aria_label: 'close', title: 'close'
         inner_html += content_tag :div, message, class: 'text'
         inner_html.html_safe
