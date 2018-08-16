@@ -31,6 +31,10 @@ You can make the flash dismissible by passing following optional options to the 
     <%= build_bootstrap_flash dismiss: true, timeout: 5000 %>
     
 ##### default timeout duration is 5000, ignore this option if you want to use default timeout duration
+
+You can add your own wrapper class by passing following parameter
+
+    <%= build_bootstrap_flash wrapper_class: 'my-flash-notification' %>
     
 ### For other two libraries follow following steps            
 
