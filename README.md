@@ -26,6 +26,12 @@ Add this helper method in your layout and make sure you have bootstrap installed
 
     <%= build_bootstrap_flash %>
     
+You can make the flash dismissible by passing following optional options to the above helper method
+
+    <%= build_bootstrap_flash dismiss: true, timeout: 5000 %>
+    
+##### default timeout duration is 5000, ignore this option if you want to use default timeout duration
+    
 ### For other two libraries follow following steps            
 
 #### Step 1: Choose a Library Noty JS or Toastr JS
@@ -86,4 +92,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the FlashNotifier project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/flash_notifier/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the FlashNotifier project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/fakhir-shad/flash_notifier/blob/master/CODE_OF_CONDUCT.md).
