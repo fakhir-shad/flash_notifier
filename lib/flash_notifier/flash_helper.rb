@@ -4,16 +4,15 @@ module FlashHelper
     html = append_options_to_dom options
     flash.each do |type, message|
       flash_type = (%w(notice success).include?(type)) ? 'success' : (( %w(alert error).include?(type)) ? 'error' : (%w(warning info).include?(type) ? type : 'info' ))
-      html += content_tag(:div, '' , data: { flash_notifier: 'inside gem', flash_type: flash_type, flash_msg: message })
+      html += content_tag(:div, '' , data: { flash_notifier: 'inside gem', flash_type: flash_type, flash_msg: escape_javascript(message) })
     end
     html.html_safe
   end
 
   def build_bootstrap_flash *args
-  	options = extract_args args
-	  append_options_to_dom options
+    options = extract_args args
     dismissible = options.has_key?(:dismiss) && options[:dismiss]
-	  timeout = options.has_key?(:timeout) ? options[:timeout] : 5000
+    timeout = options.has_key?(:timeout) ? options[:timeout] : 5000
     alert_klasses = {
         success: 'alert-success',
         error: 'alert-danger',
