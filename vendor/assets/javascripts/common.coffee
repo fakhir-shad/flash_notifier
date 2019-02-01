@@ -1,7 +1,6 @@
-window.fetchFlashOption = (attribute, defaultValue) ->
+window.fetchFlashOptions = ->
   options = $('[data-flash-notifier-options]').data('flash-notifier-options')
-  option = eval("options.#{attribute}")
-  if option == undefined then defaultValue else option
+  if Object.keys(options).length > 0 then options else {}
 
 window.initializeFlashNotifier = (method) ->
   try
