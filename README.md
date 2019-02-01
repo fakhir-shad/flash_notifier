@@ -67,14 +67,10 @@ In your layout add this helper method
     <%= build_flash %>
     
 ### Optional Step 3: Pass options to helper method  
-
-For Onscreen positioning of flash message pass param
-
-    <%= build_flash placement: 'topRight' %>
     
 To manage progress bar pass param
 
-    <%= build_flash progress_bar: true %>
+    <%= build_flash progressBar: true %>
     
 To set auto hide timeout pass param
 
@@ -84,7 +80,7 @@ To set default theme pass param (Note this param works only for Noty JS)
 
      <%= build_flash theme: 'mint' %>
     
-##### Values for these params can be found here [Noty JS](https://ned.im/noty/#/options), [Toastr JS](https://codeseven.github.io/toastr/demo.html)
+##### Values for these params and additional config options can be found here [Noty JS](https://ned.im/noty/#/options), [Toastr JS](https://codeseven.github.io/toastr/demo.html)
 
 ## Contributing
 
